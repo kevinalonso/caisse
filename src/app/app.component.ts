@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'project-kevin-app';
+  title = 'votre caisse enregistreuse';
+
+  connexion(){
+    alert("lol");
+    /*if (this.login == "kalons") {
+
+    }*/
+  }
+
 }
