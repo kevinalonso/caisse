@@ -4,18 +4,25 @@
   </h1>
 
 </div>
-<h2>Veuillez saisir vos identifiant de connexion: </h2>
-<ul>
-  <li>
-    <h2><span>Login</span></h2>
-    <input id="login" type="text" name="login" [(ngModel)]="login" value="">
-  </li>
-  <li>
-    <h2><span>Mot de passe</span></h2>
-    <input id="password" type="password" name="password" [(ngModel)]="password" value="">
-  </li>
-  <li>
-    <button type="button" (click)="connexion()" name="button">Connexion</button>
-  </li>
-</ul>
-<router-outlet></router-outlet>
+
+<div id="login-container">
+  <h2>Veuillez saisir vos identifiant de connexion: </h2>
+  <ul>
+    <li>
+      <h2><span>Login</span></h2>
+      <input id="login" type="text" name="login" [(ngModel)]="login" value="">
+    </li>
+    <li>
+      <h2><span>Mot de passe</span></h2>
+      <input id="password" type="password" name="password" [(ngModel)]="password" value="">
+    </li>
+    <li>
+      <button type="button" (click)="connexion()" name="button">Connexion</button>
+    </li>
+  </ul>
+</div>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
