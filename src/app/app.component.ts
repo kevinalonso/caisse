@@ -10,15 +10,28 @@ export class AppComponent {
   title = 'votre caisse enregistreuse';
   login;
 
-  constructor(private router : Router){}
+  constructor(private router : Router){
+    
+  }
 
   connexion(){
     if (this.login == "kalons") {
+      
       //permet de cacher la partie haute de la page de connecion
       document.getElementById('login-container').style.visibility = 'hidden';
       document.getElementById('login-container').style.height = '0px';
       this.router.navigate(['/home']);
     }
+  }
+
+  administration(){
+    if (this.login == "admin") {
+      //permet de cacher la partie haute de la page de connecion
+      document.getElementById('login-container').style.visibility = 'hidden';
+      document.getElementById('login-container').style.height = '0px';
+      this.router.navigate(['/admin']);
+    }
+    
   }
 
 }

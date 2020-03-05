@@ -1,7 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './admin/admin.component';
 
-describe('HomeComponent', () => {
+describe('AdminComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
